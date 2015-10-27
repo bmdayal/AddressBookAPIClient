@@ -2,7 +2,8 @@
 
 (function () {
     var addressBookApp = angular.module("addressBookApp");
-    var baseApiUrl="http://localhost:5000";
+    //var baseApiUrl="http://localhost:5000";
+    var baseApiUrl="http://addressbookapi.azurewebsites.net";
 
     var PersonCtrl = function ($scope, $http)
     {
