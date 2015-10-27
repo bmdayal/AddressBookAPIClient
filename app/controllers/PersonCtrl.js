@@ -22,7 +22,7 @@
     	
 
         var refresh = function(){
-        	$http.get(baseApiUrl + '/persons', header: )
+        	$http.get(baseApiUrl + '/persons')
         		.then(onPersonGetCompleted, onError);
         	console.log('Response received...');
         }
