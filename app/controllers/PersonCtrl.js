@@ -2,8 +2,8 @@
 
 (function () {
     var addressBookApp = angular.module("addressBookApp");
-    //var baseApiUrl="http://localhost:5000";
-    var baseApiUrl="http://addressbookapi.azurewebsites.net";
+    var baseApiUrl="http://addressbookserver.azurewebsites.net";
+    //var baseApiUrl="http://addressbookapi.azurewebsites.net";
 
     var PersonCtrl = function ($scope, $http)
     {
@@ -20,7 +20,6 @@
             console.log($scope.persons);
     	}
     	
-
         var refresh = function(){
         	$http.get(baseApiUrl + '/persons')
         		.then(onPersonGetCompleted, onError);
